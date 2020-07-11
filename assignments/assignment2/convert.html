@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Converter</title>
+    <style>
+      body {
+        text-align: center;
+      }
+
+      input {
+        margin: 5px;
+      }
+    </style>
+  </head>
+
+  <body onload="findFields()">
+    <h3>A Simple Currency Converter</h3>
+
+    <label for="BDT"> BDT </label>
+    <input type="number" id="BDT" value="" onkeyup="convertbdt()" />
+
+    <br />
+
+    <label for="GBP"> GBP </label>
+    <input type="number" id="GBP" value="" onkeyup="convertgbp()" />
+
+    <br />
+
+    <label for="USD"> USD </label>
+    <input type="number" id="USD" value="" onkeyup="convertusd()" />
+
+    <br />
+
+    <label for="EUR"> EUR </label>
+    <input type="number" id="EUR" value="" onkeyup="converteur()" />
+
+    <script src="convert.js"></script>
+  </body>
+</html>
