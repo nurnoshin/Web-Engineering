@@ -1,0 +1,90 @@
+<style>
+  .quiz {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+  }
+
+  .question {
+    font-weight: bold;
+  }
+
+  .answer {
+    border: 1px solid gray;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .answer:hover {
+    background-color: mediumaquamarine;
+  }
+
+  .guess {
+    color: blue;
+  }
+
+  .result {
+    color: brown;
+    font-weight: bold;
+    margin: 20px;
+  }
+
+  .next-question {
+    border: 1px solid blue;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  .progress {
+    position: fixed;
+    bottom: 10vh;
+    text-align: center;
+    color: rgb(46, 30, 194);
+    border: 1px solid rgb(46, 30, 194);
+    padding: 10px;
+  }
+
+  .final-progress {
+    text-align: center;
+    color: rgb(46, 30, 194);
+    border: 1px solid rgb(46, 30, 194);
+    padding: 10px;
+  }
+</style>
+
+<div class="quiz">
+  <div class="question">
+    Who holds the Major League Baseball record for the most home runs in a
+    season?
+  </div>
+
+  <div>
+    <ol class="answers" type="A">
+      <li class="answer">Barry Bonds</li>
+      <li class="answer">Mike Trout</li>
+      <li class="answer">Cody Bellinger</li>
+    </ol>
+  </div>
+
+  <div class="final-progress">
+    You answered 3 out of 5 questions correctly (60%)
+  </div>
+
+  <div class="guess">
+    You guessed A) Barry Bonds
+  </div>
+
+  <div class="result">CORRECT</div>
+
+  <div class="correct-answer">The correct answer is A) Barry Bonds</div>
+
+  <div class="next-question">Go to next question ➡️</div>
+
+  <div class="progress">
+    You answered 3 out of 5 questions correctly (60%)
+  </div>
+</div>

@@ -1,0 +1,84 @@
+body {
+  font-family: "Roboto Slab", serif;
+  flex-direction: column;
+}
+
+body,
+h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  flex: 1;
+  font-family: "MuseoModerno", cursive;
+  font-weight: lighter;
+}
+
+.header-image {
+  width: 25px;
+  padding: 10px;
+}
+
+td {
+  text-align: center;
+}
+
+#form {
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#form div {
+  margin-top: 0px;
+  margin-bottom: 35px;
+}
+
+#rates {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input#to {
+  margin-left: 10px;
+}
+
+input#from,
+input#to {
+  width: 250px;
+}
+
+input {
+  height: 25px;
+  font-family: "MuseoModerno", cursive;
+  font-size: 20px;
+  padding: 5px;
+}
+
+select {
+  height: 35px;
+  font-size: 20px;
+}
+
+@media (max-width: 480px) {
+  input#from,
+  input#to {
+    width: 180px;
+  }
+
+  *,
+  input,
+  select {
+    font-size: 15px;
+  }
+}
+
+label {
+  margin: 0;
+  padding: 0;
+}
